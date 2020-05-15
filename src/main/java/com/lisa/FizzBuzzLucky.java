@@ -7,18 +7,19 @@ public class FizzBuzzLucky {
     private static final String SPACE = " ";
     private static final String LUCKY = "lucky";
 
-    public static final String fizzBuzz(final int input) {
+    static String fizzBuzz(final int input) {
         StringBuilder results = new StringBuilder();
         int number = 1;
 
         while(number <= input) {
             if(containsThree(number)){
                 results.append(LUCKY);
+            } else if (number % 3 == 0 && number % 5 ==0) {
+                results.append(FIZZ + BUZZ);
             } else if (number % 3 == 0) {
                 results.append(FIZZ);
-                if(number % 5 == 0) {
-                    results.append(BUZZ);
-                }
+            } else if(number % 5 == 0) {
+                results.append(BUZZ);
             } else {
                 results.append(number);
             }
@@ -29,7 +30,7 @@ public class FizzBuzzLucky {
         return results.toString().trim();
     }
 
-    public static boolean containsThree(int number) {
+    static boolean containsThree(int number) {
         return Integer.toString(number).contains("3");
     }
 
