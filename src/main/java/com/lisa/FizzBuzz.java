@@ -1,4 +1,4 @@
-package main.java.com.lisa;
+package com.lisa;
 
 public class FizzBuzz {
     private static final String FIZZ = "fizz";
