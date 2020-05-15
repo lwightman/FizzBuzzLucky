@@ -3,7 +3,6 @@ package com.lisa;
 public class FizzBuzzLucky {
     private static final String FIZZ = "fizz";
     private static final String BUZZ = "buzz";
-    private static final String FIZZBUZZ = FIZZ + BUZZ;
     private static final String SPACE = " ";
     private static final String LUCKY = "lucky";
 
